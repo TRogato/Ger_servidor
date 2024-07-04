@@ -13,7 +13,7 @@ jobs:
       matrix:
         nodejs: [12, 14]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Setup NodeJS Environment
         uses: actions/setup-node@v3
         with:
@@ -55,7 +55,7 @@ jobs:
             phpstan-args: '--debug'
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup PHP Environment
         uses: shivammathur/setup-php@v2
         with:
